@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Create Element(s)</title>
+    <style>
+      .div1 {
+        background-color: grey;
+      }
+    </style>
+  </head>
+  <body>
+    <script>
+      let div = document.createElement('div');
+      div.innerHTML =
+        '<p>JS CreateElement example</p>' +
+        '<p>2nd Paragraph</p>' +
+        '<input type="password" id="password" placeholder="Enter your password">';
+      document.body.appendChild(div);
+
+      let divClass = document.querySelector('body');
+      divClass.setAttribute('class', 'div1');
+      console.log(divClass.getAttribute('class'));
+      document.body.appendChild(divClass);
+    </script>
+  </body>
+</html>
