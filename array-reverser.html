@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Reverser - JS Function</title>
+  </head>
+  <body>
+
+    
+      <p>Reverser - JS Function</p>
+
+
+
+    <script>
+      let numbers1 = [4, 8, 15, 16, 23, 42];
+      let numbers2 = [25, 42, 58, 6, 3, 12];
+      let result = [];
+      function numberSort() {
+        result = numbers1.concat(numbers2).sort((a, b) => a - b);
+        console.log(result);
+      }
+      numberSort();
+    </script>
+
+
+  </body>
+</html>
