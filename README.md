@@ -1,1 +1,1 @@
-# JS-Code-Samples
+# to skip secret key, use: "git config --global commit.gpgsign false"
